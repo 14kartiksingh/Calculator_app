@@ -1,0 +1,205 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:fitsSystemWindows="true"
+    android:padding="8dp">
+
+    <!-- Display Area -->
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="56sp"
+        android:textColor="#FFFFFF"
+        android:gravity="bottom|end"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="16dp"
+        android:background="#1E1E1E"
+        android:fontFamily="monospace"
+        android:text=""
+        android:maxLines="2"
+        android:ellipsize="end"/>
+
+    <!-- Keypad Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="4dp">
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <Button
+                android:text="7"
+                android:onClick="onDigitClick"
+                style="@style/CalculatorButton.Digit"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:text="8"
+                android:onClick="onDigitClick"
+                style="@style/CalculatorButton.Digit"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:text="9"
+                android:onClick="onDigitClick"
+                style="@style/CalculatorButton.Digit"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:text="+"
+                android:onClick="onOperatorClick"
+                style="@style/CalculatorButton.Operator"/>
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <Button
+                android:text="4"
+                android:onClick="onDigitClick"
+                style="@style/CalculatorButton.Digit"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:text="5"
+                android:onClick="onDigitClick"
+                style="@style/CalculatorButton.Digit"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:text="6"
+                android:onClick="onDigitClick"
+                style="@style/CalculatorButton.Digit"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:text="-"
+                android:onClick="onOperatorClick"
+                style="@style/CalculatorButton.Operator"/>
+        </LinearLayout>
+
+        <!-- Row 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <Button
+                android:text="1"
+                android:onClick="onDigitClick"
+                style="@style/CalculatorButton.Digit"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:text="2"
+                android:onClick="onDigitClick"
+                style="@style/CalculatorButton.Digit"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:text="3"
+                android:onClick="onDigitClick"
+                style="@style/CalculatorButton.Digit"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:text="×"
+                android:onClick="onOperatorClick"
+                style="@style/CalculatorButton.Operator"/>
+        </LinearLayout>
+
+        <!-- Row 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <Button
+                android:text="C"
+                android:onClick="onClearClick"
+                style="@style/CalculatorButton.Function"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:text="0"
+                android:onClick="onDigitClick"
+                style="@style/CalculatorButton.Digit"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:text="="
+                android:onClick="onEqualClick"
+                style="@style/CalculatorButton.Equal"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:text="÷"
+                android:onClick="onOperatorClick"
+                style="@style/CalculatorButton.Operator"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
