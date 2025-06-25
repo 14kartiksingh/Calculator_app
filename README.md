@@ -17,8 +17,6 @@ Perfect for basic calculations with a clean UI and smooth user experience.
 
 ## 📸 Screenshots
 
-_(Add your screenshots here if needed)_
-
 ---
 
 ## 📦 APK Download
